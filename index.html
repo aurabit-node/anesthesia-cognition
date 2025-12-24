@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
+<!-- MEDICAL + FAQ + PHYSICIAN SCHEMA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,19 +73,19 @@ body.dark{
 body{
 margin:0;font-family:Inter,sans-serif;
 background:var(--bg);color:var(--text);
-line-height:1.9;transition:.3s;
+line-height:1.85;transition:.3s;
 }
 header{
 background:linear-gradient(120deg,#020617,#0f766e);
-color:#fff;padding:8rem 1.5rem;text-align:center;
+color:#fff;padding:7.5rem 1.5rem;text-align:center;
 }
 header h1{
 font-family:"Playfair Display",serif;
-font-size:3.8rem;margin-bottom:1.2rem;
+font-size:3.6rem;margin-bottom:1rem;
 }
 header p{
-max-width:1150px;margin:auto;
-font-size:1.3rem;opacity:.95;
+max-width:1050px;margin:auto;
+font-size:1.25rem;opacity:.95;
 }
 nav{
 background:#020617;padding:1rem 1.5rem;
@@ -97,48 +98,49 @@ text-decoration:none;font-size:.95rem;
 nav a.active,nav a:hover{color:var(--gold)}
 .toggle{float:right;color:#e5e7eb;cursor:pointer}
 main{
-max-width:1600px;margin:auto;
+max-width:1550px;margin:auto;
 padding:5rem 1.5rem;
-display:grid;grid-template-columns:3fr 1fr;gap:4rem;
+display:grid;grid-template-columns:3fr 1fr;gap:3.8rem;
 }
 article{
-background:var(--card);border-radius:30px;
-padding:5.5rem;
-box-shadow:0 45px 110px rgba(0,0,0,.08);
+background:var(--card);border-radius:28px;
+padding:5.2rem;
+box-shadow:0 40px 100px rgba(0,0,0,.08);
 }
 article h2{
 font-family:"Playfair Display",serif;
-font-size:2.7rem;margin-top:4rem;
+font-size:2.6rem;margin-top:3.8rem;
 }
-article h3{color:var(--lux);margin-top:3rem}
+article h3{color:var(--lux);margin-top:2.8rem}
+article p{margin-bottom:1.45rem}
 .definition{
 background:#f1f5f9;border-left:6px solid var(--lux);
-padding:2.5rem;border-radius:18px;
-font-size:1.08rem;
+padding:2.2rem;border-radius:16px;
+font-size:1.05rem;
 }
 .ad{
-margin:5rem 0;padding:2.5rem;
+margin:4.5rem 0;padding:2.4rem;
 background:#f1f5f9;border-radius:22px;
 text-align:center;color:#64748b;
 }
 aside{
-background:var(--card);border-radius:30px;
-padding:3.2rem;position:sticky;top:130px;
-box-shadow:0 35px 90px rgba(0,0,0,.06);
+background:var(--card);border-radius:28px;
+padding:3rem;position:sticky;top:130px;
+box-shadow:0 30px 70px rgba(0,0,0,.06);
 }
 .contact{
-margin-top:7rem;padding:3.8rem;
-border-radius:26px;
+margin-top:6rem;padding:3.4rem;
+border-radius:24px;
 background:linear-gradient(135deg,#ecfeff,#f0fdfa);
 }
 footer{
 background:#020617;color:#cbd5f5;
-text-align:center;padding:3.8rem;
+text-align:center;padding:3.5rem;
 }
 footer a{color:var(--gold)}
 @media(max-width:1200px){
 main{grid-template-columns:1fr}
-header h1{font-size:2.8rem}
+header h1{font-size:2.7rem}
 }
 </style>
 </head>
@@ -148,21 +150,19 @@ header h1{font-size:2.8rem}
 <header>
 <h1>Anesthesia and Cognitive Outcomes</h1>
 <p>
-A comprehensive, physician-authored, evidence-based authority on the effects of anesthesia on cognition, 
-postoperative delirium, postoperative cognitive dysfunction, and perioperative neuroprotection.
+A physician-authored, evidence-based medical authority on postoperative delirium,
+cognitive dysfunction, and perioperative neuroprotection.
 </p>
 </header>
 
 <nav>
 <a href="#definition">Definition</a>
 <a href="#intro">Introduction</a>
-<a href="#epidemiology">Epidemiology</a>
 <a href="#mechanisms">Mechanisms</a>
 <a href="#delirium">Delirium</a>
 <a href="#pocd">POCD</a>
-<a href="#anesthetic-techniques">Techniques</a>
 <a href="#prevention">Prevention</a>
-<a href="#future">Future</a>
+<a href="#faq">FAQ</a>
 <a href="#references">References</a>
 <span class="toggle" onclick="toggleDark()">🌙</span>
 </nav>
@@ -172,135 +172,75 @@ postoperative delirium, postoperative cognitive dysfunction, and perioperative n
 <article>
 
 <section id="definition" class="definition">
-<strong>Clinical Definition</strong><br><br>
-Anesthesia-related cognitive outcomes encompass a spectrum of perioperative neurocognitive disorders, 
-ranging from acute postoperative delirium to delayed and persistent postoperative cognitive dysfunction (POCD). 
-These conditions arise from complex interactions between patient vulnerability, surgical stress, anesthetic exposure, 
-and neuroinflammatory responses.
+<strong>Clinical Definition:</strong><br>
+Anesthesia-related cognitive outcomes encompass transient postoperative delirium and
+persistent postoperative cognitive dysfunction (POCD), influenced by patient
+vulnerability, surgical stress, anesthetic depth, and neuroinflammation.
 </section>
 
 <section id="intro">
 <h2>Introduction</h2>
 <p>
-Advances in anesthesiology have transformed surgical care, enabling increasingly complex procedures in older 
-and medically fragile populations. As perioperative mortality has declined, attention has shifted toward 
-long-term outcomes, particularly cognitive health. Cognitive impairment following anesthesia and surgery 
-has emerged as a critical determinant of quality of life, functional independence, and healthcare utilization.
-</p>
-<p>
-Postoperative cognitive changes were once considered transient and clinically insignificant. Contemporary 
-research, however, has demonstrated that a subset of patients experience prolonged or permanent cognitive decline. 
-These findings have positioned perioperative neurocognitive disorders as a major public health concern, 
-particularly in aging societies.
+While anesthesia enables modern surgery, its effects on brain function have become
+increasingly relevant as surgical populations age. Cognitive outcomes are now recognized
+as key indicators of perioperative quality and long-term neurological health.
 </p>
 </section>
 
-<div class="ad">AdSense – Above the Fold</div>
-
-<section id="epidemiology">
-<h2>Epidemiology and Clinical Impact</h2>
-<p>
-Postoperative delirium affects approximately 15–50% of elderly surgical patients, with higher rates observed 
-after cardiac, orthopedic, and major abdominal surgeries. POCD has been reported in up to 25% of older adults 
-at one week postoperatively and persists in a smaller but clinically meaningful proportion at three months and beyond.
-</p>
-<p>
-The consequences of perioperative cognitive impairment extend far beyond hospitalization. Affected patients 
-demonstrate increased mortality, prolonged institutionalization, reduced adherence to medical therapy, and 
-accelerated functional decline. From a healthcare systems perspective, these outcomes translate into increased 
-resource utilization and economic burden.
-</p>
-</section>
+<div class="ad">AdSense – Above the Fold (Responsive)</div>
 
 <section id="mechanisms">
 <h2>Neurobiological Mechanisms</h2>
-
-<h3>Neuroinflammation</h3>
+<h3>Inflammation and Microglial Activation</h3>
 <p>
-Surgical trauma induces a systemic inflammatory response characterized by cytokine release, activation of the 
-innate immune system, and disruption of the blood–brain barrier. Peripheral inflammatory mediators gain access 
-to the central nervous system, activating microglia and astrocytes. This neuroinflammatory cascade impairs synaptic 
-function, alters neurotransmitter balance, and disrupts neuronal networks critical for attention and memory.
+Surgical trauma induces systemic inflammation that disrupts the blood–brain barrier,
+activates microglia, and impairs synaptic plasticity.
 </p>
-
 <h3>Neurotransmitter Dysregulation</h3>
 <p>
-Alterations in cholinergic transmission play a central role in delirium, while disruptions in dopaminergic, 
-GABAergic, and glutamatergic pathways contribute to executive dysfunction and memory impairment. Anesthetic agents, 
-by design, modulate these neurotransmitter systems and may exacerbate underlying vulnerabilities.
+Cholinergic deficiency, GABAergic imbalance, and glutamate excitotoxicity are central
+to delirium and executive dysfunction.
 </p>
+</section>
 
-<h3>Cerebral Perfusion and Oxygenation</h3>
+<section id="delirium">
+<h2>Postoperative Delirium</h2>
 <p>
-Intraoperative hypotension, impaired autoregulation, and microembolic phenomena can compromise cerebral perfusion. 
-Even brief episodes of cerebral hypoxia may precipitate cognitive dysfunction in susceptible individuals, 
-particularly those with preexisting cerebrovascular disease.
+Delirium is an acute fluctuating disorder of attention affecting up to 50% of elderly
+surgical patients and is associated with increased mortality and long-term cognitive decline.
 </p>
 </section>
 
 <div class="ad">AdSense – Mid Article</div>
 
-<section id="delirium">
-<h2>Postoperative Delirium</h2>
-<p>
-Postoperative delirium is an acute, fluctuating disturbance of attention and awareness that typically occurs 
-within the first few days after surgery. Clinically, it manifests as inattention, disorganized thinking, 
-altered level of consciousness, and perceptual disturbances.
-</p>
-<p>
-Delirium is not a benign or self-limiting condition. Numerous studies have demonstrated associations with 
-long-term cognitive decline, institutionalization, and mortality. Importantly, delirium is often preventable, 
-making it a key target for perioperative intervention.
-</p>
-</section>
-
 <section id="pocd">
-<h2>Postoperative Cognitive Dysfunction (POCD)</h2>
+<h2>Postoperative Cognitive Dysfunction</h2>
 <p>
-POCD refers to subtle but measurable declines in cognitive performance following surgery, typically affecting 
-memory, executive function, processing speed, and attention. Unlike delirium, POCD lacks overt clinical signs 
-and is detectable only through neuropsychological testing.
-</p>
-<p>
-The pathophysiology of POCD remains incompletely understood but is believed to involve persistent neuroinflammation, 
-synaptic dysfunction, and impaired neuroplasticity. Advanced age, lower educational attainment, and major surgery 
-are consistent risk factors.
-</p>
-</section>
-
-<section id="anesthetic-techniques">
-<h2>Influence of Anesthetic Techniques</h2>
-<p>
-The relationship between anesthetic technique and cognitive outcomes has been extensively investigated. 
-While no single anesthetic agent has been definitively proven to cause long-term cognitive decline, evidence 
-suggests that anesthetic depth, hemodynamic stability, and multimodal analgesia play more significant roles 
-than the choice of agent alone.
-</p>
-<p>
-Regional anesthesia and neuraxial techniques may reduce the incidence of delirium in selected populations by 
-minimizing systemic drug exposure and preserving physiological stability. However, patient selection and 
-procedural context remain critical.
+POCD manifests as subtle but persistent impairment in memory and executive function,
+often detectable only through neuropsychological testing.
 </p>
 </section>
 
 <section id="prevention">
-<h2>Prevention and Perioperative Neuroprotection</h2>
+<h2>Prevention and Neuroprotection</h2>
 <ul>
-<li>Preoperative cognitive and frailty assessment</li>
-<li>Avoidance of deep anesthesia using processed EEG monitoring</li>
-<li>Maintenance of cerebral perfusion and oxygenation</li>
+<li>Preoperative cognitive screening</li>
+<li>Depth-of-anesthesia monitoring</li>
+<li>Hemodynamic stability</li>
 <li>Multimodal, opioid-sparing analgesia</li>
-<li>Early mobilization and sleep optimization</li>
-<li>Implementation of delirium prevention bundles</li>
+<li>Delirium prevention bundles</li>
 </ul>
 </section>
 
-<section id="future">
-<h2>Future Directions</h2>
+<section id="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>Is anesthesia safe for the brain?</h3>
 <p>
-Emerging research is focused on identifying biomarkers of vulnerability, refining neuroprotective strategies, 
-and integrating artificial intelligence into perioperative risk prediction. As understanding deepens, 
-personalized anesthetic care may become the cornerstone of cognitive preservation.
+Yes for most patients. Risk increases with age, frailty, and preexisting cognitive impairment.
+</p>
+<h3>Can cognitive decline be prevented?</h3>
+<p>
+Evidence supports targeted perioperative strategies that significantly reduce risk.
 </p>
 </section>
 
@@ -325,13 +265,13 @@ Consultant, GNRC Hospital<br>
 </article>
 
 <aside>
-<h4>Authority Signals</h4>
+<h4>Authority Markers</h4>
 <p>
 ✔ Physician-authored<br>
-✔ Evidence-linked (PubMed)<br>
-✔ Medical & FAQ schema<br>
+✔ PubMed-linked evidence<br>
+✔ Medical + FAQ schema<br>
 ✔ AdSense compliant<br>
-✔ Discover optimized
+✔ Discover-optimized
 </p>
 </aside>
 
